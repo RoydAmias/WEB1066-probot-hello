@@ -7,4 +7,6 @@ before_install:
   - docker build -t probot-hello .
 
 script:
-- docker run --rm probot-hello npm run test
+  - docker run --rm probot-hello npm run test
+  - docker run --rm probot-hello npm run lintt
+
