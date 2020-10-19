@@ -4,6 +4,8 @@ services:
 
 before_install:
   - docker pull node:8-onbuild
+
+install:
   - docker build -t probot-hello .
 
 script:
