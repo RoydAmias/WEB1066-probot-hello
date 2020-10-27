@@ -24,7 +24,7 @@ jobs:
       name: "Test 8-jessie"
       install: skip
       script:
-      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-${git rev-parse HEAD} npm run $NPM_TARGET
+      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       env:
       - NODE_VERSION=8-jessie
       - NPM_TARGET=test
@@ -32,7 +32,7 @@ jobs:
       name: "Test 8-jessie"
       install: skip
       script:
-      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-${git rev-parse HEAD} npm run $NPM_TARGET
+      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       env:
       - NODE_VERSION=8-jessie
       - NPM_TARGET=lint
@@ -40,7 +40,7 @@ jobs:
       name: "Test 8-jessie"
       install: skip
       script:
-      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-${git rev-parse HEAD} npm run $NPM_TARGET
+      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       env:
       - NODE_VERSION=8-jessie
       - NPM_TARGET=coverage
@@ -48,7 +48,7 @@ jobs:
       name: "Test 10-jessie"
       install: skip
       script:
-      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-${git rev-parse HEAD} npm run $NPM_TARGET
+      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       env:
       - NODE_VERSION=8-jessie
       - NPM_TARGET=test
@@ -56,7 +56,7 @@ jobs:
       name: "Test 10-jessie"
       install: skip
       script:
-      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-${git rev-parse HEAD} npm run $NPM_TARGET
+      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       env:
       - NODE_VERSION=8-jessie
       - NPM_TARGET=lint
@@ -64,7 +64,7 @@ jobs:
       name: "Test 10-jessie"
       install: skip
       script:
-      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-${git rev-parse HEAD} npm run $NPM_TARGET
+      - doker run -rm $DOCKER_USERNAME/probot-hello:$NODE_VERSION-$(git rev-parse HEAD) npm run $NPM_TARGET
       if: branch = master
       env:
       - NODE_VERSION=8-jessie
