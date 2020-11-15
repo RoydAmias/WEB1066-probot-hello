@@ -1,3 +1,8 @@
-language: node_js
-node_js:
-  - "8.3"
+sudo: enabled
+language: python
+
+before_install:
+  - sudo apt-get update && sudo apt-get install -y python-yaml
+
+script:
+  - sudo python2 -c "from yaml import load, dump"
