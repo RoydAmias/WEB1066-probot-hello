@@ -3,10 +3,10 @@
  * @param {import('probot').Application} app - Probot's Application class.
  */
 module.exports = app => {
+/*
   // Get an express router to expose new HTTP endpoints
   const router = app.route('/probot')
 
-  /*
   // https://github.com/siimon/prom-client
   // prometheus metrics
   const client = require('prom-client')
