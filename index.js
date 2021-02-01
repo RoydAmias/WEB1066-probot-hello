@@ -6,6 +6,7 @@ module.exports = app => {
   // Get an express router to expose new HTTP endpoints
   const router = app.route('/probot')
 
+  /*
   // https://github.com/siimon/prom-client
   // prometheus metrics
   const client = require('prom-client')
@@ -77,6 +78,7 @@ module.exports = app => {
       http.get(process.env.PROM_URL)
     }, 300000) // every 5 minutes (300000)
   }
+*/
 
   // Your code here
   app.log('Yay, the app was loaded!')
@@ -86,6 +88,7 @@ module.exports = app => {
     return context.github.issues.createComment(issueComment)
   })
 
+/*
   app.on('check_run.completed', async context => {
     app.log('check_run.completed -> called ')
     // app.log(JSON.stringify(context))
@@ -111,6 +114,7 @@ module.exports = app => {
     prom.observe(observation, duration)
     app.log('check_run.created -> done')
   })
+*/
 
   // For more information on building apps:
   // https://probot.github.io/docs/
