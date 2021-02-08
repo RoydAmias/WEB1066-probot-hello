@@ -50,3 +50,4 @@ describe('My Probot app', () => {
 
 // For more information about testing with Jest see:
 // https://facebook.github.io/jest/
+//
