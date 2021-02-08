@@ -1,12 +1,12 @@
 {
   "name": "probot-hello",
-  "version": "1.0.0",
-  "description": "A Probot app",
-  "author": "Edward Raigosa <wenlock@github.com>",
+  "version": "1.0.2",
+  "description": "A RoydAmias Probot app",
+  "author": "Royd Amias <RoydAmias@github.com>",
   "license": "ISC",
-  "repository": "https://github.com/wenlock/probot-hello.git",
-  "homepage": "https://github.com/wenlock/probot-hello",
-  "bugs": "https://github.com/wenlock/probot-hello/issues",
+  "repository": "https://github.com/RoydAmias/WEB1066-probot-hello.git",
+  "homepage": "https://github.com/RoydAmias/WEB1066-probot-hello",
+  "bugs": "https://github.com/RoydAmias/WEB1066-probot-hello/issues",
   "keywords": [
     "probot",
     "github",
@@ -17,10 +17,15 @@
     "start": "probot run ./index.js",
     "lint": "standard --fix",
     "test": "jest && standard",
+    "coverage": "jest --coverage",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "probot": "^7.0.0"
+    "dev": "^0.1.3",
+    "probot": "^7.0.0",
+    "prom-client": "^v11.2.0",
+    "express": "^4.13.3",
+    "run": "^1.4.0"
   },
   "devDependencies": {
     "jsdom": "11.11.0",
@@ -30,11 +35,14 @@
     "standard": "^10.0.3"
   },
   "engines": {
-    "node": ">= 8.3.0 <8.12.0"
+    "node": "8.3.0"
   },
   "standard": {
     "env": [
       "jest"
     ]
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
